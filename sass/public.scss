@@ -1,0 +1,72 @@
+@charset "UTF-8";
+$main-color:#12B7F5;
+$border-color:#DBDFE1;
+$change-back-color:#F7F7F8;
+$txt-color:#9B9DB1;
+$white:#fff;
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	box-sizing:border-box;
+	text-decoration:none;
+	font-family:"微软雅黑";
+}
+$border-color:#DBDFE1;
+html,body,.container{
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+	background:#fefefc;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+@mixin wh($w,$h){
+	width:$w/2;
+	height:$h/2;
+}
+@mixin box($way){
+	display:-webkit-flex;
+	-webkit-flex-direction:$way;
+}
+
+@mixin flex($num){
+	-webkit-flex-grow:$num;
+}
+
+@mixin pos($p:absolute){
+	position:$p;
+}
+
+@mixin borderT{
+	border-top:1px solid #ccc;
+}
+
+@mixin borderB{
+	border-bottom:1px solid #ccc;
+}
+
+@mixin arrow-right{
+	&:after{
+		content:"";
+		display:inline-block;
+		width:12px;
+		height:12px;
+		border-right:1px solid $border-color;
+		border-bottom:1px solid $border-color;
+		-webkit-transform:rotate(-45deg);
+		@include pos;
+		
+	}
+}
+@mixin arrow-left{
+	&:before{
+		content:"";
+		display:inline-block;
+		width:12px;
+		height:12px;
+		border-right:1px solid $border-color;
+		border-bottom:1px solid $border-color;
+		-webkit-transform:rotate(135deg);
+		@include pos;
+	}
+}

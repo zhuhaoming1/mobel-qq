@@ -1,0 +1,43 @@
+@import "public.scss";
+
+.all{
+	width:100%;
+	height:100%;
+	padding:10px;
+	background:#000;
+}
+.log{
+	dl{
+		text-align:center;
+		width:70px;
+		dt{
+			width:70px;
+			height:70px;
+			background:#fff url('../img/loga.jpg') no-repeat center center;
+			border-radius:50%;
+			background-size:contain;
+		}
+		dd{
+			font-weight:800;
+			font-size:1.5rem;
+			color:#fff;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+@import "public.scss";
+$main-color:#12B7F5;
+$border-color:#DBDFE1;
+$change-back-color:#F7F7F8;
+$txt-color:#9B9DB1;
+$white:#fff;
+
+.container{
+	width:100%;
+	height:100%;
+}
+.header{
+	height:60px;
+	background:$main-color;
+	width:100%;
+	@include pos;
+	top:0;
+	left:0;
+	@include box(row);
+	-webkit-justify-content:space-between;
+	-webkit-align-items:center;
+	@include pos(relative);
+	h3{
+		@include pos;
+		width:78px;
+		height:18.5px;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+	}
+	span{
+		padding:0 15px;
+		color:$white;
+		&:nth-child(1){
+			@include arrow-left;
+			padding-left:20px;
+			&:before{
+				left:8px;
+				top:50%;
+				margin-top:-5px;
+			}
+		}
+	}
+	h3{
+		color:$white;
+	}
+	a{
+		color:#fff;
+	}
+}
+
+section{
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	@include pos;
+	left:0;
+	top:60px;
+}
+.nav{
+	height:45px;
+	a{
+		float:left;
+		width:25%;
+		height:45px;
+		line-height:45px;
+		text-align:center;
+		color:$txt-color;
+		border-bottom:3px solid transparent;
+		&.hight{
+			border-bottom-color:blue;
+		}
+	}
+}
+
+.banner{
+	width:100%;
+	height:200px;
+	ul{
+		width:100%;
+		height:100%;
+	}
+}
+.ban{
+	@include pos(relative);
+	li{
+		width:100%;
+		height:100%;
+		@include pos;
+		left:0;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	
+}
+
+
+
+
+

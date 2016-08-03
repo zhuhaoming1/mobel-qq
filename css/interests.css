@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "微软雅黑"; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #fefefc;
+  -webkit-tap-highlight-color: transparent; }
+
+.container {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  height: 60px;
+  background: #12B7F5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  position: relative; }
+  .header h3 {
+    position: absolute;
+    width: 78px;
+    height: 18.5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .header span {
+    padding: 0 15px;
+    color: #fff; }
+    .header span:nth-child(1) {
+      padding-left: 20px; }
+      .header span:nth-child(1):before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-right: 1px solid #DBDFE1;
+        border-bottom: 1px solid #DBDFE1;
+        -webkit-transform: rotate(135deg);
+        position: absolute; }
+      .header span:nth-child(1):before {
+        left: 8px;
+        top: 50%;
+        margin-top: -5px; }
+  .header h3 {
+    color: #fff; }
+  .header a {
+    color: #fff; }
+
+section {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  left: 0;
+  top: 60px; }
+
+.nav {
+  height: 45px; }
+  .nav a {
+    float: left;
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #9B9DB1;
+    border-bottom: 3px solid transparent; }
+    .nav a.hight {
+      border-bottom-color: blue; }
+
+.banner {
+  width: 100%;
+  height: 200px; }
+  .banner ul {
+    width: 100%;
+    height: 100%; }
+
+.ban {
+  position: relative; }
+  .ban li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; }
+    .ban li img {
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=interests.css.map */
