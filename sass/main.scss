@@ -1,15 +1,15 @@
-@import "public.scss";
+
 
 $main-color:#12B7F5;
 $border-color:#DBDFE1;
 $change-back-color:#F7F7F8;
 $txt-color:#9B9DB1;
 $white:#fff;
-.container{
+.Mcontainer{
 	overflow:hidden;
-}
 
-.header{
+
+.Mheader{
 	height:60px;
 	background:$main-color;
 	width:100%;
@@ -298,8 +298,7 @@ section{
 }
 
 
-
-
+}
 
 
 

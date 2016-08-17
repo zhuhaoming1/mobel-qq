@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;} 
+
+html,body{
+    width:100%;
+    height:100%;
+}
+.Pcontainer{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    @include pos(relative);
+    .picture{
+        width:100%;
+        height:100%;
+        @include pos;
+        left:0;
+        top:0;
+        z-index:3;
+    }
+    .Pft{
+        width:100%;
+        height:60px;
+        color:#fff;
+        @include box(row);
+        text-align:center;
+        line-height:60px;
+        background:#000;
+        @include pos;
+        left:0;
+        bottom:0;
+        span{
+           @include flex(1);
+           font-size:2em;
+        }
+        #picture{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background:#fff;
+            opacity:0.7;
+            margin-top:5px;
+            display:inline-block;
+        }
+    }
+    #video{
+        width:100%;
+        height:100%;
+        @include pos;
+
+    }
+    .pic{
+        width:100%;
+        height:100%;
+        @include pos;
+        left:0;
+        top:0;
+        background:#fff;
+    }
+    #canvas{
+        width:100%;
+        height:100%;
+    }
+}
+
+
+
+

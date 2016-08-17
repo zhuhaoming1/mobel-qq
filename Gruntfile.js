@@ -3,11 +3,7 @@ module.exports = function(grunt){
 		sass: {
 			dist: {
 				files: {
-					'css/enter.css': 'sass/enter.scss',
-					'css/interests.css': 'sass/interests.scss',
-					'css/main.css': 'sass/main.scss',
-					'css/phone.css': 'sass/phone.scss',
-					'css/public.css': 'sass/public.scss'
+					'css/all.css': 'sass/all.scss'
 				}
 			}
 		},

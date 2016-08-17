@@ -6,13 +6,19 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="format-detection" content="email=no"/>
-	<link rel="stylesheet" href="../css/main.css">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<link rel="stylesheet" href="../css/all.css">
 	<link rel="stylesheet" href="../css/font-awesome.css">
 	<title>QQ</title>
 </head>
 <body ng-app="myapp">
-	<div class="container">
-		<header class="header">
+	<div class="Mcontainer">
+		<header class="Mheader">
 			<div class="photo"><img src="../img/aaa.jpg" alt=""></div>
 			<div class="box">
 				<div class="header-tab">
@@ -101,19 +107,19 @@
 				<div class="sec"><p class="search fa fa-search">搜索</p></div>
 				<div class="new-firend friend2">
 					<dl>
-						<a href="../other/dynamic.html">
+						<a href="../other/dynamic.html?tit=好友动态">
 							<dt></dt>
 							<dd>好友动态</dd>
 						</a>
 					</dl>
 					<dl>
-						<a href="../other/near.html">
+						<a href="../other/near.html?tit=附近">
 							<dt></dt>
 							<dd>附近</dd>
 						</a>
 					</dl>
 					<dl>
-						<a href="../other/interests.html">
+						<a href="../other/interests.html?tit=兴趣部落">
 							<dt></dt>
 							<dd>兴趣部落</dd>
 						</a>
@@ -139,8 +145,9 @@
 				</dl>
 				<dl class="app-list">
 					<dt></dt>
-					<dd>NOW直播</dd>
+					<dd>NOW直播<video id="video" autoplay>123</video></dd>
 				</dl>
+				
 			</div>
 		</section>
 		<footer class="foot">
